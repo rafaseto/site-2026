@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic and professional profile - Helena Carvalho Leal">
+    <title>Helena Carvalho Leal - Academic Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --border-color: #e1e4e8;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Lora', serif;
+            color: var(--primary-color);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 40px;
+        }
+
+        /* Sidebar (Left) */
+        .sidebar {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            height: fit-content;
+        }
+
+        .profile-img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid var(--border-color);
+        }
+
+        .sidebar h1 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .sidebar p.title {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-info strong {
+            display: block;
+            margin-top: 15px;
+            color: var(--secondary-color);
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .skills-list li {
+            background: var(--bg-color);
+            border: 1px solid var(--border-color);
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            color: var(--secondary-color);
+        }
+
+        /* Main Content (Right) */
+        .main-content {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* Experience/Education Items */
+        .timeline-item {
+            margin-bottom: 25px;
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 10px;
+        }
+
+        .timeline-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        .timeline-subtitle {
+            font-style: italic;
+            color: #555;
+            margin: 0;
+        }
+
+        .timeline-date {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #f1c40f;
+            color: #8e44ad;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <img src="foto.jpeg" alt="Helena Carvalho Leal" class="profile-img">
+            <h1>Helena Carvalho Leal</h1>
+            <p class="title">Computer Science & Physics | Front-end | Researcher</p>
+            
+            <div class="contact-info">
+                <strong>Location</strong>
+                <span>Aracaju, Sergipe, Brazil</span>
+            
+                <strong>LinkedIn</strong>
+                <a href="https://www.linkedin.com/in/helena-carvalho-leal/" target="_blank">in/helena-carvalho-leal</a>
+            
+                <strong>GitHub</strong>
+                <a href="https://github.com/HelenaCarvalhoLeal" target="_blank">github.com/HelenaCarvalhoLeal</a>
+                
+                <strong>Email</strong>
+                <a href="mailto:helenacarvalholeal99@gmail.com">Send an email</a>
+            </div>
+
+            <strong>Top Skills</strong>
+            <ul class="skills-list">
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Python</li>
+                <li>HTML & CSS</li>
+                <li>Flask</li>
+                <li>Quantum Computing</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            
+            <section id="about">
+                <h2 class="section-title">About Me</h2>
+                <p>With three years of studies in Physics and a degree in Computer Science, I have developed a solid analytical foundation and a multidisciplinary approach to tackling complex challenges. My experience as a Physics and Mathematics teacher has also contributed to honing my communication skills, making it easier to convey concepts clearly and accessibly.</p>
+                <p>In programming, I am proficient in front-end development using HTML, CSS, JavaScript, and React, having gained practical experience through projects available on my GitHub. Additionally, I have experience with private projects that showcase my ability to apply programming knowledge in both academic and market contexts. I am constantly seeking to integrate theory and practice into innovative projects that promote technological and scientific advancement.</p>
+            </section>
+
+            <section id="experience">
+                <h2 class="section-title">Professional Experience</h2>
+                
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-title">Research Assistant (Internship)</h3>
+                            <p class="timeline-subtitle">ADA METAVERSE</p>
+                        </div>
+                        <span class="timeline-date">Jul 2025 - Dec 2025</span>
+                    </div>
+                    <p>My work involves using visual language models (VLM) for interpreting forensic scenes and ensuring the accuracy of simulations through the study of the physical principles involved.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-title">Software Engineer (Undergraduate Research - PIBIC)</h3>
+                            <p class="timeline-subtitle">Materials Preparation and Characterization Laboratory - UFS</p>
+                        </div>
+                        <span class="timeline-date">Apr 2024 - Mar 2025</span>
+                    </div>
+                    <ul>
+                        <li>Developed a graphical interface for the Lumpy (Luminescence Python Interface) library, making it more accessible to experimental physicists.</li>
+                        <li>Separated the fundamental calculations into a Python API using Flask, enabling communication with the front-end.</li>
+                        <li>Built the application's front-end using React.js.</li>
+                        <li>Conducted usability tests with professors, postdocs, PhD students, and lab members, using experimental data from scientific papers to improve the interface based on feedback.</li>
+                        <li>Verified the accuracy of simulated values against theoretical data.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="research">
+                <h2 class="section-title">Research & Presentations</h2>
+
+                <div class="timeline-item">
+                    <h3 class="timeline-title">ACM SIGGRAPH 2025</h3>
+                    <p class="timeline-subtitle">Accepted Poster: "Evaluating Skin Tone Biases in Virtual Human Rendering"</p>
+                    <p>Explored the challenges of fairness in virtual human rendering, focusing on how skin tone bias can affect inclusivity in technology. We analyzed non-linear color distortions affecting darker skin tones. My main contribution involved identifying the most relevant variables and visualizing the results through graphs built from 80 images representing the 10 tones of the Monk Skin Tone Scale. (Advised by Prof. Victor Araujo, Ph.D. and Prof. Soraia Musse).</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 class="timeline-title">1st IEEE CASS Northeast Brazil Workshop</h3>
+                    <p class="timeline-subtitle">Poster Presentation: "Infrastructure for Remote Execution of Quantum Algorithms on GPUs"</p>
+                    <p>Poster presentation in collaboration with Eduarda Mascarenhas, under the guidance of professors Calebe Conceição and Rodolfo Garcia.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 class="timeline-title">CPweekend Aracaju</h3>
+                    <p class="timeline-subtitle">Speaker: "The Quantum Computing Landscape and Opportunities"</p>
+                    <p>Presented the latest news in the field of quantum computing, leading companies in the market, recent scientific papers, the Brazilian context, and pathways to enter this rapidly expanding field.</p>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2 class="section-title">Education</h2>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-title">Bachelor's Degree, Computer Science</h3>
+                            <p class="timeline-subtitle">Universidade Tiradentes (UNIT)</p>
+                            <span class="badge">SBC Outstanding Student</span>
+                        </div>
+                        <span class="timeline-date">Jan 2023 - Dec 2025</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-title">Bachelor's Degree, Physics</h3>
+                            <p class="timeline-subtitle">Universidade Federal de Sergipe (UFS)</p>
+                        </div>
+                        <span class="timeline-date">2019 - 2027</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2 class="section-title">Projects & Certifications</h2>
+
+                <div class="timeline-item">
+                    <h3 class="timeline-title">Automatic Feeder “Full Feeder”</h3>
+                    <p>Prototyping an autonomous system with an integrated battery and voltage monitoring for controlled horse feeding (up to 8 mini portions daily). Project advanced in collaboration with Prof. Antônio Ramirez (UFS). <br>
+                    <a href="https://doi.org/10.13140/RG.2.2.33842.82880" target="_blank">DOI: 10.13140/RG.2.2.33842.82880</a></p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 class="timeline-title">Qiskit Global Summer School 2024: The Path to Utility</h3>
+                    <p>Completed the IBM program, participating in labs focused on 'Transpilation: Generating Efficient Hardware-Compliant Quantum Circuits', 'Utility-Scale Layer Fidelity Experiment', and 'Simulating Nature at Utility Scale'.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 class="timeline-title">Quantum Computing for Beginners - Extecamp (Unicamp)</h3>
+                    <p>Currently deepening studies at the intersection of quantum computing and machine learning, solving problems based on computational simulations of quantum physics fundamentals.</p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+</body>
+</html>
